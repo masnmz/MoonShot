@@ -25,6 +25,8 @@ struct MissionView: View {
                     .containerRelativeFrame(.horizontal) { width, axis in
                         width * 0.6
                     }
+                    .padding(.vertical, 5)
+                Text(mission.formattedLaunchDate)
                 Rectangle()
                     .frame(height: 2)
                     .foregroundStyle(.lightBackground)
